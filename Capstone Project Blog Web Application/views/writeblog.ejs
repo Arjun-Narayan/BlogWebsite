@@ -1,0 +1,26 @@
+<%- include("header.ejs") %>
+<%- include("leftnav.ejs") %>
+
+
+        <div class="forms-container">
+            <form action="/postBlog" method="post" class="write-blog">
+                <% if (locals.titleblog && locals.contentblog) { %>
+                    <input type="text" class="form-control mb-4" placeholder="Enter Blog Title Here" name="blogtitle" value="<%= titleblog %>" required autofocus>
+                    <textarea name="blogcontent" class="form-control mb-2" placeholder="Enter Blog Content Here" name="blogcontent" required><%= contentblog %></textarea>
+                    <button type="submit" class="btn btn-outline-info btn-lg">Edit Blog</button>
+                <% } else{%>
+                    <input type="text" class="form-control mb-4" placeholder="Enter Blog Title Here" name="blogtitle" required autofocus>
+                    <textarea name="blogcontent" class="form-control mb-2" placeholder="Enter Blog Content Here" name="blogcontent" required></textarea>
+                    <button type="submit" class="btn btn-outline-info btn-lg">Post Blog</button>
+                <% } %>
+            </form>
+            <% if (locals.titleblog && locals.contentblog) { %>
+                <form action="/deleteBlog" method="post" class="write-blog">
+                    <button type="submit" class="btn btn-outline-danger btn-lg mt-3">Delete Blog</button>
+                </form>
+            <% } %>
+        </div>
+    </div>
+
+
+<%- include("footer.ejs") %>

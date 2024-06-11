@@ -1,0 +1,73 @@
+section.contact-page{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section.contact-page > form.left-side, section.contact-page > .right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+
+section.contact-page .row1, section.contact-page .row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contact-page input{
+    color: black;
+    padding: 5px;
+    width: 47%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: inherit;
+}
+
+section.contact-page input:focus{
+    outline: none;
+}
+
+section.contact-page textarea{
+    color: black;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: inherit;
+}
+
+section.contact-page textarea:focus{
+    outline: none;
+}
+
+section.contact-page > form.left-side{
+    background-color: rgb(200,200,200);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+section.contact-page > .right-side{
+    background-color: rgb(50,50,200);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 15px;
+}
+
+@media (max-width: 768px){
+    section.contact-page{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    section.contact-page > form.left-side{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    section.contact-page > .right-side{
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+}

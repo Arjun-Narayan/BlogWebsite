@@ -1,0 +1,22 @@
+section.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+section.container small.text-body-secondary a{
+    text-decoration: none;
+}
+
+section.container div.horizontal-flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.container div.horizontal-flexbox > *{
+    flex-basis: 49%;
+}
+
+section.container p#error-message{
+    color: red;
+}

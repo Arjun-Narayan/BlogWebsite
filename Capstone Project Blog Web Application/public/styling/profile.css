@@ -1,0 +1,39 @@
+.user-details-container{
+    margin: 80px 10% 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+form.user-details{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+form.user-details > .detail{
+    display: flex;
+    width: 350px;
+}
+
+form.user-details > .detail > p{
+    width: 40%;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+form.user-details > .detail > input{
+    width: 60%;
+    font-size: 20px;
+}
+
+form.user-details p.error-message{
+    color: red;
+    font-size: 20px;
+}
+
+form.delete-user > button{
+    width: 100%;
+}

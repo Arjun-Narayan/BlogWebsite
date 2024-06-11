@@ -1,0 +1,36 @@
+<%- include("header.ejs") %>
+<%- include("leftnav.ejs") %>
+
+        <div class="user-details-container">
+            <form class="user-details" action="/updateUser" method="post">
+                <div class="detail">
+                    <p>First Name: </p>
+                    <input class="form-control" type="text" name="fname" value="<%= fname %>">
+                </div>
+                <div class="detail">
+                    <p>Last Name: </p>
+                    <input class="form-control" type="text" name="lname" value="<%= lname %>">
+                </div>
+                <div class="detail">
+                    <p>Username: </p>
+                    <input class="form-control" type="text" name="uname" value="<%= username %>">
+                </div>
+                <% if(error){ %>
+                    <p class="error-message">Username is not available</p>
+                <% } %>
+                <div class="detail">
+                    <p>Password: </p>
+                    <input class="form-control" type="text" name="pwd" value="<%= password %>">
+                </div>
+                <button class="btn btn-lg btn-outline-info" type="submit">Update Profile</button>
+            </form>
+            <form class="delete-user" action="/deleteUser" method="post">
+                <button class="btn btn-lg btn-outline-danger">Delete Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $("section.left-navbar ul.nav li a[href='/profile']").addClass("active");
+    </script>
+<%- include("footer.ejs") %>

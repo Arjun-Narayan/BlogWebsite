@@ -1,0 +1,17 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin: 200px 20px 200px 20px;
+}
+
+form#signin-form{
+    flex-basis: 500px;
+}
+
+form#signin-form small a{
+    text-decoration: none;
+}
+
+form#signin-form p#error-message{
+    color: red;
+}

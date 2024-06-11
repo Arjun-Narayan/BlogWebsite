@@ -1,0 +1,28 @@
+<%- include("header.ejs") %>
+
+
+    <div class="text-center my-3">
+        <h1>Contact Us</h1>
+        <p>We will try to respond to your query at the earliest</p>
+    </div>
+    <section class="contact-page">
+        <form class="left-side" action="/contactUs" method="post">
+            <div class="row1">
+                <input type="text" name="fname" placeholder="First Name" required>
+                <input type="text" name="lname" placeholder="Last Name">
+            </div>
+            <div class="row2">
+                <input type="text" name="uname" placeholder="Username" required>
+                <input type="text" name="topic" placeholder="Topic" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">SEND</button>
+        </form>
+        <div class="right-side">
+            <h3>Or you can reach out to us here</h3>
+            <p><b>Email:</b> disposablee713@gmail.com</p>
+            <p><b>Phone:</b> +91 9876543210</p>
+            <p><b>Address:</b> No Address Yet</p>
+        </div>
+    </section>
+<%- include("footer.ejs") %>

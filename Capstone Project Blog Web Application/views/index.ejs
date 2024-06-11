@@ -1,0 +1,49 @@
+<%- include("header.ejs")%>
+
+
+    <section class="px-4 py-5 text-center" id="hero1">
+        <h1 class="display-5 fw-bold text-body-emphasis">BlogPost</h1>
+        <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Our website aims to give you the best blogging experience and help you to grow your blog from scratch. Book sessions with our experts or enroll in our premium recorded courses to make your blogs more captivating and interesting to read.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="/signUp" class="btn btn-outline-success btn-lg px-4 gap-3">Get Started</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Do everything with BlogPost</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="assets/icon.png" class="bi" height="35" alt="write blogs">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Write Blogs</h3>
+            <p>Share your experiences with the world from the comfort of your home. Get your blogs published in renowned magazines and newsletters with just a click.</p>
+            <a href="/signIn" class="icon-link">Learn more</a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="assets/tubelight.png" class="bi" height="35" alt="book sessions">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Book Sessions</h3>
+            <p>Book sessions with our verified experts to either go over a specific blog post and find points for improvement or get some help in completing your blog post.</p>
+            <button class="icon-link">Learn more</button>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <img src="assets/student-cap.png" class="bi" height="35" alt="pursue courses">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Pursue Courses</h3>
+            <p>Enroll in our expert designed writing courses in over 10 different languages to take your blogs to the next level. Learn how to write a perfect blog right from the basics.</p>
+            <a href="/coursesPricing" class="icon-link">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        $("button.icon-link").on("click", function(){
+          alert("Sorry all our experts are booked for the next 6 months please try later");
+        })
+      </script>
+<%- include("footer.ejs") %>

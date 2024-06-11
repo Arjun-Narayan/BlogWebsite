@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+<%- include("leftnav.ejs") %>
+
+
+        <div class="forms-container">
+            <section class="write-blog">
+                <div class="blog-title">
+                    <label>Title:</label>
+                    <input type="text" class="px-2 mb-4" value = "<%= blogToDisplay[0] %>" disabled>
+                </div>
+                <div class="blog-content">
+                    <label>Content:</label>
+                    <textarea name="blogcontent" class="px-2 mb-2" disabled><%= blogToDisplay[1] %></textarea>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,12 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+button.icon-link{
+  border: none;
+  background-color: inherit;
+  color: rgb(110, 168, 254);
+  text-decoration: underline;
+}

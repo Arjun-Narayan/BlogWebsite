@@ -1,0 +1,31 @@
+<%- include("header.ejs") %>
+<%- include("leftnav.ejs") %>
+
+
+        <form class="blog-display" action="/viewBlog" method="post">
+            <h1>
+                <%= usersUsername %>
+            </h1>
+            <% for( let i = 0; i < allBlogs.length; i++ ) { %>
+                <input type="text" value="<%= clickedprofilenumber %>" class="d-none" name="profile-number">
+                <button type="submit" class="condensed-blog-view" value="<%= i*(-1) %>" name="inactive">
+                    <h2><%= allBlogs[i][0] %></h2>
+                    <hr style="width: 100%;">
+                    <p><%= allBlogs[i][2]%></p>
+                </button>
+            <% } %>
+            <% if (allBlogs.length === 0) { %>
+                <hr>
+                <div class="no-blog-message">
+                    <h2>This user has not published any blogs yet</h2>
+                </div>
+            <% } %>
+        </form>
+    </div>
+
+    <script>
+        $("form.blog-display button.condensed-blog-view").on("click", function(){
+            this.name = "active";
+        })
+    </script>
+<%- include("footer.ejs") %>

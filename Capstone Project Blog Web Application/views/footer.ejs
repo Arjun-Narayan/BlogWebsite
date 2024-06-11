@@ -1,0 +1,22 @@
+    <div class="container">
+        <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <% if (!userLoggedIn) { %>
+                <li class="nav-item"><a href="/#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="/#featured-3" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <% }else{ %>
+                <li class="nav-item"><a href="/homepage#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <% } %>
+            <li class="nav-item"><a href="/coursesPricing" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><button class="nav-link px-2 text-body-secondary">About</button></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 BlogPost</p>
+        </footer>
+    </div>
+    <script>
+        $("header.navbar button.nav-link, .container > footer button.nav-link").on("click", function(){
+          alert("Nothing to say about us except we are the best blogging website");
+        })
+      </script>
+</body>
+</html>

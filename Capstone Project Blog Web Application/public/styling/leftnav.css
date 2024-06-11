@@ -1,0 +1,48 @@
+section.left-navbar{
+    margin-top: 70px;
+    width: 250px;
+}
+
+section.left-navbar #leftnavbar-top-username{
+    font-size: 15px;
+    text-align: left;
+}
+
+section.left-navbar ul > li > a{
+    font-size: 20px;
+}
+
+div.flex-container{
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width: 768px){
+    section.left-navbar{
+        width: 70px;
+    }
+
+    section.left-navbar > hr{
+        width: 70px;
+    }
+
+    section.left-navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.left-navbar ul li a{
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    section.left-navbar ul li a > img{
+        width: 30px;
+        height: 30px;
+    }
+}

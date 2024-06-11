@@ -1,0 +1,68 @@
+<%- include("header.ejs") %>
+
+
+  <div class="container my-5 pricing-heading">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+      <h1 class="text-body-emphasis">Welcome to our Paid Courses</h1>
+      <p class="lead">
+        These courses will improve your blog writing at incredibly affordable prices. Comes with money back gurantee if not satisfied, no questions asked.
+      </p>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mx-3 pricing-container">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Basic Plan</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$20<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Access to all video lectures</li>
+              <li>All your blogs are reviewed by our experts</li>
+              <li>Available only for one language of your choice</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Premium Plan</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$35<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>All perks of basic plan</li>
+              <li>Weekly one on one sessions with our experts</li>
+              <li>Availabe for all languages</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Executive Plan</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$40<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>All perks of premium plan</li>
+              <li>Access to monthly guest lectures</li>
+              <li>20% discount on expert lecture bookings</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("button").on("click", function(){
+        alert("You are too broke for this plan so i am morally obligated to stop you from proceeding");
+      })
+    </script>
+<%- include("footer.ejs") %>
